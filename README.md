@@ -1,4 +1,4 @@
-# Talenten Show Website
+# Competition Website
 
 [![](https://i.snag.gy/856rD1.jpg)](https://timpiers.net)
 
