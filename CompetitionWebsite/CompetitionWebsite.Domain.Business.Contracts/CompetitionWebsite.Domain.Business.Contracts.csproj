@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CompetitionWebsite.Domain.Models\CompetitionWebsite.Domain.Models.csproj" />
+  </ItemGroup>
+
 </Project>

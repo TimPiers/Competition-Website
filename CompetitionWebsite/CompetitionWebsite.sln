@@ -22,18 +22,40 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CompetitionWebsite.Database", "CompetitionWebsite.Database\CompetitionWebsite.Database.sqlproj", "{D18EC3D8-4414-412B-B5EB-DFB29AB9CBBB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.UnitTests", "CompetitionWebsite.UnitTests\CompetitionWebsite.UnitTests.csproj", "{89001DEB-6BD8-4A22-92C5-3444632C3511}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B40E521-9E30-4670-A5DB-02C963A6819E} = {6B40E521-9E30-4670-A5DB-02C963A6819E}
+		{C472632C-C517-4A33-AC7D-CF3C211E04AF} = {C472632C-C517-4A33-AC7D-CF3C211E04AF}
+		{3930A879-096B-450E-AB8D-149056D0BB4E} = {3930A879-096B-450E-AB8D-149056D0BB4E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.Web", "CompetitionWebsite.Web\CompetitionWebsite.Web.csproj", "{F4F6B38B-985E-4381-AAB0-74DCAFCA6E93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.WebApi", "CompetitionWebsite.WebApi\CompetitionWebsite.WebApi.csproj", "{D6962CFB-9732-41ED-BF39-F964DD1717E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B40E521-9E30-4670-A5DB-02C963A6819E} = {6B40E521-9E30-4670-A5DB-02C963A6819E}
+		{C472632C-C517-4A33-AC7D-CF3C211E04AF} = {C472632C-C517-4A33-AC7D-CF3C211E04AF}
+		{3930A879-096B-450E-AB8D-149056D0BB4E} = {3930A879-096B-450E-AB8D-149056D0BB4E}
+		{66597BD8-C9DF-49C9-8982-DB39E6BAE8A9} = {66597BD8-C9DF-49C9-8982-DB39E6BAE8A9}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.Repositories", "CompetitionWebsite.Repositories\CompetitionWebsite.Repositories.csproj", "{66597BD8-C9DF-49C9-8982-DB39E6BAE8A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompetitionWebsite.Repositories", "CompetitionWebsite.Repositories\CompetitionWebsite.Repositories.csproj", "{66597BD8-C9DF-49C9-8982-DB39E6BAE8A9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C472632C-C517-4A33-AC7D-CF3C211E04AF} = {C472632C-C517-4A33-AC7D-CF3C211E04AF}
+		{3930A879-096B-450E-AB8D-149056D0BB4E} = {3930A879-096B-450E-AB8D-149056D0BB4E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.Domain.Business", "CompetitionWebsite.Domain.Business\CompetitionWebsite.Domain.Business.csproj", "{6B40E521-9E30-4670-A5DB-02C963A6819E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompetitionWebsite.Domain.Business", "CompetitionWebsite.Domain.Business\CompetitionWebsite.Domain.Business.csproj", "{6B40E521-9E30-4670-A5DB-02C963A6819E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C472632C-C517-4A33-AC7D-CF3C211E04AF} = {C472632C-C517-4A33-AC7D-CF3C211E04AF}
+		{3930A879-096B-450E-AB8D-149056D0BB4E} = {3930A879-096B-450E-AB8D-149056D0BB4E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.Domain.Business.Contracts", "CompetitionWebsite.Domain.Business.Contracts\CompetitionWebsite.Domain.Business.Contracts.csproj", "{C472632C-C517-4A33-AC7D-CF3C211E04AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompetitionWebsite.Domain.Business.Contracts", "CompetitionWebsite.Domain.Business.Contracts\CompetitionWebsite.Domain.Business.Contracts.csproj", "{C472632C-C517-4A33-AC7D-CF3C211E04AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3930A879-096B-450E-AB8D-149056D0BB4E} = {3930A879-096B-450E-AB8D-149056D0BB4E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionWebsite.Domain.Models", "CompetitionWebsite.Domain.Models\CompetitionWebsite.Domain.Models.csproj", "{3930A879-096B-450E-AB8D-149056D0BB4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompetitionWebsite.Domain.Models", "CompetitionWebsite.Domain.Models\CompetitionWebsite.Domain.Models.csproj", "{3930A879-096B-450E-AB8D-149056D0BB4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,7 +10,7 @@ namespace CompetitionWebsite.WebApi.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Web Api";
 
             return View();
         }
