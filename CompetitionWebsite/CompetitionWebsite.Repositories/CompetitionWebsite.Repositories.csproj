@@ -8,4 +8,9 @@
     <PackageReference Include="EntityFramework" Version="6.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CompetitionWebsite.Domain.Business.Contracts\CompetitionWebsite.Domain.Business.Contracts.csproj" />
+    <ProjectReference Include="..\CompetitionWebsite.Domain.Models\CompetitionWebsite.Domain.Models.csproj" />
+  </ItemGroup>
+
 </Project>

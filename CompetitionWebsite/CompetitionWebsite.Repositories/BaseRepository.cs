@@ -2,7 +2,12 @@
 
 namespace CompetitionWebsite.Repositories
 {
-    public class BaseRepository
+    public abstract class BaseRepository<TEntity> where TEntity : class
     {
+
+        public CompetitionWebsiteContext CreateContext()
+        {
+            return new CompetitionWebsiteContext();
+        }
     }
 }

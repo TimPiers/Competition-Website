@@ -200,7 +200,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -324,6 +324,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CompetitionWebsite.Domain.Business.Contracts\CompetitionWebsite.Domain.Business.Contracts.csproj">
+      <Project>{C472632C-C517-4A33-AC7D-CF3C211E04AF}</Project>
+      <Name>CompetitionWebsite.Domain.Business.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompetitionWebsite.Domain.Business\CompetitionWebsite.Domain.Business.csproj">
+      <Project>{6B40E521-9E30-4670-A5DB-02C963A6819E}</Project>
+      <Name>CompetitionWebsite.Domain.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompetitionWebsite.Domain.Models\CompetitionWebsite.Domain.Models.csproj">
+      <Project>{3930A879-096B-450E-AB8D-149056D0BB4E}</Project>
+      <Name>CompetitionWebsite.Domain.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompetitionWebsite.Repositories\CompetitionWebsite.Repositories.csproj">
+      <Project>{66597BD8-C9DF-49C9-8982-DB39E6BAE8A9}</Project>
+      <Name>CompetitionWebsite.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
