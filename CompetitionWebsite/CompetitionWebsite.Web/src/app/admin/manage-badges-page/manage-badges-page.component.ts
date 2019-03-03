@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BadgeService } from '../../core/services/badge.service';
 import * as $ from 'jquery';
 import { Badge } from '../../shared/models/badge.model';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-manage-badges-page',
@@ -68,7 +69,10 @@ export class ManageBadgesPageComponent implements OnInit {
   deleteBadge(badge: Badge) {
     this.badgeService.deleteBadge(badge).subscribe(result => {
       this.getBadges();
-    });
+    },
+      error => {
+        $("#deleteError").show();
+      });
   }
 
   formatReleaseYear(ReleaseYear: string) {

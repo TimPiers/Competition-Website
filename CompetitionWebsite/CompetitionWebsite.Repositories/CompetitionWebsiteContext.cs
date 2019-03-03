@@ -1,4 +1,5 @@
-﻿using CompetitionWebsite.Domain.Models.Games;
+﻿using CompetitionWebsite.Domain.Models.Competitions;
+using CompetitionWebsite.Domain.Models.Games;
 using CompetitionWebsite.Domain.Models.Players;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,8 @@ namespace CompetitionWebsite.Repositories
 
             modelBuilder.Entity<Game>().ToTable("Game", "Admin");
             modelBuilder.Entity<Badge>().ToTable("Badge", "Admin");
-
+            modelBuilder.Entity<Prize>().ToTable("Prize", "Admin");
+            modelBuilder.Entity<Competition>().ToTable("Competition", "Admin");
 
         }
 

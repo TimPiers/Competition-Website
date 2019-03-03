@@ -1,0 +1,6 @@
+.delete-error {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}

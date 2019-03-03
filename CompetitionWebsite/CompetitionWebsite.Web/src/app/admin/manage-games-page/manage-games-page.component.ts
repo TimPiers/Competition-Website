@@ -72,7 +72,10 @@ export class ManageGamesPageComponent implements OnInit {
   deleteGame(game: Game) {
     this.gameService.deleteGame(game).subscribe(result => {
       this.getGames();
-    });
+    },
+      error => {
+        $("#deleteError").show();
+      });
   }
 
   formatReleaseYear(ReleaseYear: string) {

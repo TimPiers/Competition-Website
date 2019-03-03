@@ -9,7 +9,7 @@ namespace CompetitionWebsite.Domain.Models.Competitions
     {
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Title { get; set; }
         public string Description { get; set; }
         public Badge Badge { get; set; }
         public int BadgeId { get; set; }

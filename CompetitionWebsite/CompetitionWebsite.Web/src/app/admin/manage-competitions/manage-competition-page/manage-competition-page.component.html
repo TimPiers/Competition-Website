@@ -1,0 +1,44 @@
+<div class="row mt-3 ml-2 mb-3">
+  <div class="col">
+    <a href="admin/manage/competitions/new"><button class="btn btn-primary">New</button></a>
+  </div>
+  <div class="col">
+    <nav aria-label="Page navigation example" *ngIf="tableCompetitions">
+      <ul class="pagination float-right mr-2">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item" *ngFor="let page of getPages()"><a class="page-link clickable text-primary" (click)="setTableCompetitions(page)">{{ page }}</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<table id="CompetitionsTable" class="table table-bordred table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Game</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="tableCompetitions">
+
+    <tr *ngFor="let comp of tableCompetitions">
+      <td>{{ comp.Name }}</td>
+      <td>{{ comp.Description }}</td>
+      <td>{{ formatStatus(comp.Status) }}</td>
+      <td>{{ comp.Game.Name }}</td>
+      <td><i class="fa fa-edit clickable" (click)="editCompetition(comp)"></i></td>
+      <td><i class="fa fa-trash clickable" (click)="deleteCompetition(comp)"></i></td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+
+

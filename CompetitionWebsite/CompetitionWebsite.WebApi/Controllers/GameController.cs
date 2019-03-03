@@ -84,7 +84,7 @@ namespace CompetitionWebsite.WebApi.Controllers
             }
             catch (Exception e)
             {
-                throw e;
+                throw new HttpResponseException(HttpStatusCode.InternalServerError);
             }
         }
     }

@@ -6,6 +6,8 @@ import { AdminHomePageComponent } from './admin-home-page/admin-home-page.compon
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ManageGamesPageComponent } from './manage-games-page/manage-games-page.component';
 import { ManageBadgesPageComponent } from './manage-badges-page/manage-badges-page.component';
+import { ManageCompetitionPageComponent } from './manage-competitions/manage-competition-page/manage-competition-page.component';
+import { NewCompetitionPageComponent } from './manage-competitions/new-competition-page/new-competition-page.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { ManageBadgesPageComponent } from './manage-badges-page/manage-badges-pa
     AdminHomePageComponent,
     ManageGamesPageComponent,
     ManageBadgesPageComponent,
+    ManageCompetitionPageComponent,
+    NewCompetitionPageComponent,
   ],
   imports: [
     BrowserModule,

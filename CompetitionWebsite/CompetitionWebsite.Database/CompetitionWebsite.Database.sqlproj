@@ -65,5 +65,7 @@
     <Build Include="Schemas.sql" />
     <Build Include="Admin\Game.sql" />
     <Build Include="Admin\Badge.sql" />
+    <Build Include="Admin\Prize.sql" />
+    <Build Include="Admin\Competition.sql" />
   </ItemGroup>
 </Project>
