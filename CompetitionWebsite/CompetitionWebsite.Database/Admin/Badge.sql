@@ -1,0 +1,6 @@
+﻿CREATE TABLE [Admin].[Badge]
+(
+    [Id] INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    [Title] VARCHAR(100) NOT NULL,
+    [IconPath] VARCHAR(1000) NOT NULL,
+)

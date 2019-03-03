@@ -3,7 +3,8 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SessionStorageService } from './services/session-storage.service';
 import { BaseService } from './services/base.service';
-import { ThemeService } from './services/theme.service';
+import { GameService } from './services/Game.service';
+import { BadgeService } from './services/badge.service';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { ThemeService } from './services/theme.service';
   declarations: [],
   providers: [
     BaseService,
-    ThemeService,
+    GameService,
+    BadgeService,
     SessionStorageService
   ]
 })

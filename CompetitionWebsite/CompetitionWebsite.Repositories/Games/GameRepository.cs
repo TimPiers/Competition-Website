@@ -2,6 +2,7 @@
 using CompetitionWebsite.Domain.Models.Games;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 
@@ -11,7 +12,23 @@ namespace CompetitionWebsite.Repositories.Games
     {
         public int DeleteGame(Game game)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var context = CreateContext())
+                {
+                    context.Set<Game>().Attach(game);
+                    context.Entry(game).State = EntityState.Deleted;
+                    context.SaveChanges();
+                    return 1;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+
+
         }
 
         public List<Game> GetAllGames()

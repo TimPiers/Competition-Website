@@ -64,5 +64,6 @@
   <ItemGroup>
     <Build Include="Schemas.sql" />
     <Build Include="Admin\Game.sql" />
+    <Build Include="Admin\Badge.sql" />
   </ItemGroup>
 </Project>

@@ -1,35 +1,32 @@
 ﻿using CompetitionWebsite.Domain.Business.Contracts.Services;
-using CompetitionWebsite.Domain.Business.Games;
-using CompetitionWebsite.Domain.Models.Games;
-using CompetitionWebsite.Repositories.Games;
+using CompetitionWebsite.Domain.Business.Players;
+using CompetitionWebsite.Domain.Models.Players;
+using CompetitionWebsite.Repositories.Players;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace CompetitionWebsite.WebApi.Controllers
 {
-    public class GameController : ApiController
+    public class BadgeController : ApiController
     {
-        private IGameService _service;
+        private IBadgeService _service;
 
-        public GameController()
+        public BadgeController()
         {
-            _service = new GameService(new GameRepository());
+            _service = new BadgeService(new BadgeRepository());
         }
 
         /// <summary>
-        /// Get all games.
+        /// Get all badges.
         /// </summary>
-        [Route("games/all")]
+        [Route("badges/all")]
         [HttpGet]
-        public List<Game> GetAllGames()
+        public List<Badge> GetAllBadges()
         {
             try
             {
-                return _service.GetAllGames();
+                return _service.GetAllBadges();
             }
             catch (Exception e)
             {
@@ -38,15 +35,15 @@ namespace CompetitionWebsite.WebApi.Controllers
         }
 
         /// <summary>
-        /// Get game by id.
+        /// Get badge by id.
         /// </summary>
-        [Route("games/get/{id}")]
+        [Route("badges/get/{id}")]
         [HttpGet]
-        public Game GetGameById(int id)
+        public Badge GetBadgeById(int id)
         {
             try
             {
-                return _service.GetGameById(id);
+                return _service.GetBadgeById(id);
             }
             catch (Exception e)
             {
@@ -55,15 +52,15 @@ namespace CompetitionWebsite.WebApi.Controllers
         }
 
         /// <summary>
-        /// Save a game
+        /// Save a badge
         /// </summary>
-        [Route("games/save")]
+        [Route("badges/save")]
         [HttpPost]
-        public int SaveGame(Game game)
+        public int SaveBadge(Badge badge)
         {
             try
             {
-                return _service.SaveGame(game);
+                return _service.SaveBadge(badge);
             }
             catch (Exception e)
             {
@@ -72,15 +69,15 @@ namespace CompetitionWebsite.WebApi.Controllers
         }
 
         /// <summary>
-        /// delete a game
+        /// delete a badge
         /// </summary>
-        [Route("games/delete")]
+        [Route("badges/delete")]
         [HttpPost]
-        public int DeleteGame(Game game)
+        public int DeleteBadge(Badge badge)
         {
             try
             {
-                return _service.DeleteGame(game);
+                return _service.DeleteBadge(badge);
             }
             catch (Exception e)
             {
